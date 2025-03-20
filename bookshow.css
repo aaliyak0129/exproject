@@ -1,0 +1,69 @@
+.search{
+    width: auto;
+    padding: 10px;
+    /* margin: 10px 0; */
+    border: 1px solid #1616161a;
+    border-radius: 5px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #24199f;
+    background-color: #b9e4f066;
+    outline: none;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.aaliya{
+box-sizing: border-box;
+position: absolute;
+top: 15%;
+left: 35%;
+    font-size: 20px;
+    font-weight: bold;
+   
+    color: rgb(255, 255, 255);
+    text-align: center;
+    border: 3px solid #3c167f;
+    border-radius: 5px;
+  padding: 10px;
+    text-shadow: 
+  0 0 5px #0004ff, /* Red glow */
+  0 0 10px #0004ff, 
+  0 0 20px #ff0000, 
+  0 0 40px #ff0000;
+
+    background-image: url(./image/25.jpg);
+    background-position: center;
+    background-size: cover;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  }
+
+ 
+   input {
+    background: rgba(255, 255, 255, 0.493);
+ border: none;
+    padding: 6px;
+    border-radius: 5px;
+    color: rgb(38, 10, 143);
+    font-weight: bold;
+    font-size: 18px;
+} 
+  .aaliya button {
+    background-color: #270e97;
+    font-size: medium;
+    width: 20%;
+    color: white;
+  }
+  .aa{
+    background-color: #270e9722;
+  }
+  /* .khan{
+    background: rgba(255, 255, 255, 0.493);
+    border: none;
+    padding: 4px;
+    gap: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+  } */

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="book.css"></head>
+<body>
+        <!-- Left Side: Video -->
+            <video autoplay muted loop id="video-bg">
+                <source src="./extra/v1.mp4" type="video/mp4">
+            </video>
+            
+    <form>   
+       
+        <div class="form-heading"data-aos="zoom-in" data-aos-duration="3000">Car Rental Booking Form</div>
+
+        <div class="form-group" data-aos="fade-right"data-aos-duration="2000">
+            
+<label>Enter your name:</label><input type="text" id="name" placeholder="enter your name">
+</div>
+<div class="form-group" data-aos="fade-left"data-aos-duration="2000">
+<label>Phone number:</label><input type="number" id="phone" placeholder="enter your phone number"></div>
+<div class="form-group" data-aos="fade-right"data-aos-duration="2000">
+ <label>Aadhar number:</label> <input type="number" id="aadhar" placeholder="enter your aadhar number"></div><br> <br>
+ <div class="form-group" data-aos="fade-left"data-aos-duration="2000">
+ <label>Driving license:</label> <input type="number" id="number" placeholder=" enter your Driving license"></div><br> <br>
+ <div class="form-group" data-aos="fade-right"data-aos-duration="2000">
+<label>Pick up date:</label> <input type="date" id="date"></div><br> <br>
+<div class="form-group"data-aos="fade-left" data-aos-duration="2000">
+<label>Dropoff date:</label> <input type="date" id="dropoff" placeholder="Dropoff date"></div><br> <br>
+<div class="form-group" data-aos="zoom-in" data-aos-duration="2000"><label>Select car:</label><select id="car">
+    <option value="audi">Audi</option>
+    <option value="bmw">BMW</option>
+    <option value="mercedes">Mercedes</option>
+    <option value="volvo">Honda</option>
+    <option value="toyoto">Toyota</option> 
+   </select></div><br> <br>
+   <div class="form-group" data-aos="zoom-in" data-aos-duration="2000">
+<label>select people: </label><select id="people">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option><br><br></select>
+</div>
+
+    <br> <br>
+    <input type="submit" value="Book Now" onclick="return userinput()" >
+</form>
+
+    <script src="./book.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>

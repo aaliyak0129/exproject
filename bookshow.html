@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>destiny drive rentals</title>
+<link rel="stylesheet" href="bookshow.css">   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.6.0/pagination.css" integrity="sha512-TH+vnrhByFI2RzNvaHSqt6EwoJ9Bp+yGAGTWp84qTuTx315ebnypxtyGHpli55Rm4N4J+N/0W9xAL2b5RZ2ZSA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    body{
+        background-image: url('./Screenshot\ 2025-03-06\ 014532.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        font-family: Arial, sans-serif;
+    }
+    table{
+        width: 100%;
+        margin-top: 50px;
+        border-collapse: collapse;
+    }
+    th, td{
+        text-align: center;
+        background-color: rgba(26, 26, 152, 0.782);
+        color: white;
+        padding: 8px;
+    }
+    th{
+        font-weight: bold;
+    }
+    tr:nth-child(even){
+        background-color: rgba(63, 63, 66, 0.582);
+    }
+    tr:hover{
+        background-color: rgba(26, 26, 152, 0.782);
+    }
+    h1{
+        text-align: center;
+        color: rgb(38, 11, 146);
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 50px;
+    }
+</style>
+<div data-aos="fade-up" data-aos-duration="1500">
+    <h1>YOUR DETAILS</h1>
+</div>
+
+<body onload="fetchData()">
+    <div class="search"data-aos="fade-right" data-aos-duration="1500">
+    SEARCH:<input type="text" id="searchinp" oninput="searchh()"></div>
+    <table border="1px solid black" cellspacing="10px" cellpadding="15px" data-aos="fade-left" data-aos-duration="1500">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Phone number</th>
+                <th>AadharNo</th>
+                <th>Driving license Number</th>
+                <th>Pickup date</th>
+                <th>Dropoff date</th>
+                <th>Car</th>
+                <th>People</th>
+                <th>Price</th>
+                <th>Total</th>
+                <th>Cancel</th>
+                <th>update</th>
+            </tr>
+        </thead>
+        <tbody  id="display" >
+            <!-- Data will be dynamically added here -->
+        </tbody>
+    </table>
+
+
+    <div id="show"></div>
+    <div id="pagin" style="display: flex; justify-content: center; margin-top: 16%;"data-aos="fade-down" data-aos-duration="1500"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.6.0/pagination.min.js" integrity="sha512-GzbaI5EsNzdEUq6/2XLYpr1y9CUZRIVsUeWTAFgULtQa5jZ3Nug8i0nZKM6jp9NffBCZhymPPQFcF0DK+JkRpw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./book.js"></script>
+</body>
+</html>
